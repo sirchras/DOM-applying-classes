@@ -10,6 +10,7 @@ function start () {
   // Your turn! Create a new function called `two`, then call it from here.
   two();
   three();
+  makeVisible();
 }
 
 function one () {
@@ -33,3 +34,7 @@ function three() {
 }
 
 // CREATE FUNCTION makeVisible HERE
+function makeVisible() {
+  var invisible=document.getElementsByClassName("invisible");
+  invisible[0].classList.add("visible");
+}
